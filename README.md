@@ -1,5 +1,14 @@
 # elog
-一个日志库,带有context，输出有序json格式等
+一个日志库,带有trace，输出有序json格式等
+
+特性：
+ - 带有trace信息,通过context实现，可以关联所有日志
+ - 使用的时候支持key-val形式，方便
+ - 输出的是json格式，并且能保证有序
+
+
+
+使用样例
 
 ```
 zlog.ChangeConfig(&zlog.Conf{Prefix: "lzy", Dir: "/tmp/log", Mode: zlog.ModeDev})
